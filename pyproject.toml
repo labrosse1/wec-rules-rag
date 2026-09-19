@@ -1,0 +1,9 @@
+[project]
+name = "wec-rules-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pymupdf4llm>=1.28.2",
+]
