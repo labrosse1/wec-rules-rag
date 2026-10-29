@@ -5,5 +5,9 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "dotenv>=0.9.9",
+    "llama-index>=0.14.25",
+    "llama-index-embeddings-voyageai>=0.7.0",
+    "pdfplumber>=0.11.10",
     "pymupdf4llm>=1.28.2",
 ]

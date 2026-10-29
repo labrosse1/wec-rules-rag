@@ -1,0 +1,47 @@
+{
+  "59": {
+    "figure_id": "drawing-1",
+    "title": "Drawing N°1 – working area and stopping area in front of the pit garage",
+    "description": "Top view of the working area in front of the pit garage. The working area is 500 cm wide. Inside it, the stopping area (in yellow) is marked by lateral tapes; the stopping area is 250 cm deep, and there are 50 cm between the stopping area and the 2.5 m line on the garage side. The '2.5m LINE' runs along the front of the pit garage. (Article 12.2.2 a) refers to this drawing: the car must stop in its dedicated stopping area and no part of the car may cover the lateral tape in top view.)",
+    "verified": false,
+    "related": [
+      "12.2.2"
+    ]
+  },
+  "67": {
+    "figure_id": "appendix-3-overalls",
+    "title": "Appendix 3 – Drivers' overalls patch positions (illustration)",
+    "description": "Five example Driver overalls (white, black, white, black, red) with helmets. Each overall carries the 'WEC – FIA World Endurance Championship' logo patch on the chest and the '24h Le Mans' patch on the upper sleeve (shoulder). This illustrates the 2 mandatory patches; the patch dimensions are given in the text (135 mm length x 56 mm height).",
+    "verified": false,
+    "related": [
+      "APPENDIX 3-11"
+    ]
+  },
+  "68": {
+    "figure_id": "appendix-3-hypercar-stickers",
+    "title": "FIA WEC Hypercar front and side display (sticker placement)",
+    "description": "This view is only valid as an identification for stickers placement. FRONT DISPLAY – Front, blue section: 2 Michelin logos (min 35 cm width) or 2 Michelin Man decals (min 20 cm height) or 1 Michelin logo (min 50 cm width). Front bonnet: 1 National flag, 1 Race number, 1 Championship logo, 1 Hybrid identification sticker, 1 FIA/ACO sticker. SIDE DISPLAY – 1 Hybrid identification sticker on a high part of the car; 1 FIA/ACO sticker; Side pod area: Race number, and the official sponsor sticker above either the race number or the display panel. Rear, yellow section: 2 Michelin logos (min 35 cm width) or 2 Michelin Man decals (min 20 cm height). Sides, green section: 1 Michelin logo on each side (min 35 cm width) or 1 Michelin Man decal on each side (min 20 cm height). Front: 2 Michelin logos (min 35 cm width) or 1 Michelin logo (min 50 cm width) or 2 Michelin Man decals (min 20 cm height). Notes on both views: Mandatory to have at least 1 Michelin logo on each side of the vehicle and not only Michelin Man. Position free on the allowed area; must be accepted at the scrutineering. It is not permitted to position stickers over air-intakes or on flat parts of the bodywork except country flag on the front splitter.",
+    "verified": false,
+    "related": [
+      "APPENDIX 3-9"
+    ]
+  },
+  "69": {
+    "figure_id": "appendix-3-lmgt3-stickers",
+    "title": "FIA WEC LMGT3 front and side display (sticker placement)",
+    "description": "This view is only valid as an identification for stickers placement. FRONT DISPLAY – Corners: 1 Goodyear sticker on each corner (min 30 cm width). Front area: 1 National flag, 1 Race number, 1 Championship logo, 1 FIA/ACO sticker. For LMGT3 cars, the race number and WEC official stickers must be linked as on this model on the front and side area. SIDE DISPLAY – 1 FIA/ACO sticker; Side pod area: Race number, and the official sponsor sticker above either the race number or the display panel. Sides: 1 Goodyear sticker on each side (min 45 cm width). Corners: 1 Goodyear sticker on each corner (min 30 cm width). Notes: Position free on the allowed area; must be accepted at the scrutineering. It is not permitted to position stickers over air-intakes or on flat parts of the bodywork.",
+    "verified": false,
+    "related": [
+      "APPENDIX 3-10"
+    ]
+  },
+  "72": {
+    "figure_id": "appendix-5-rfid",
+    "title": "Appendix 5 – RFID sticker positioning options",
+    "description": "Side view of the rear of a car. A dashed line marks the wheel axis. Option 1 (red area) is located in front of the rear wheel, at the height of the wheel axis, over a length of 250 mm. Option 2 (green area) is located behind the rear wheel, at the height of the wheel axis, over a length of 250 mm.",
+    "verified": false,
+    "related": [
+      "APPENDIX 5-1"
+    ]
+  }
+}
