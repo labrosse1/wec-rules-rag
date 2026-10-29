@@ -30,7 +30,6 @@ Two passages that looked like extraction artefacts ("from the 10 15 minute signa
 - **Figures become records of their own**, with a manual text transcription stored in `figures.json`, a `verified` flag, and links to the related articles. The text where a figure appears keeps a pointer to the figure record.
 - **Add a quality gate (`qa_rules.py`)** that blocks indexing when it fails. It checks coverage against the PDF table of contents, numbering gaps, empty and duplicate records, cross-reference resolution, and word coverage of the English column. It also lists the items that need a human decision.
 - **Flag, never guess, source ambiguities.** Records containing unresolved revision marks get a `source_ambiguity` flag; the answer LLM must report the ambiguity instead of choosing a value.
-- **Separate chunking (`make_chunks.py`) from extraction.** Articles stay the unit (ADR-001), but those over 450 words are split at their own sub-items (a), b), c)...) then at paragraph boundaries, never inside a table. Every chunk is embedded with its hierarchy path so that short articles keep their meaning.
 - **Extend the metadata** defined in ADR-001 with: pages per paragraph, breadcrumb, ready-made citation, categories concerned (Hypercar / LMGT3), internal and external references, related articles, flags, `is_template` (Appendix 1 is a blank model with "XX" placeholders).
 - **One entry point (`run_pipeline.py`)** chains extraction → QA → chunking and stops before chunking if the QA fails.
 
