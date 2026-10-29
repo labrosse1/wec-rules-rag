@@ -3,10 +3,6 @@ Regulations PDF into a structured JSON file.
 
 The PDF is laid out in two columns: French on the left (x < COLUMN_SPLIT),
 English on the right. Pages 86+ are the table of contents and are skipped.
-
-The document has two numbering regimes:
-  * main body   - "1. CHAPTER" > "1.2 Section" > "1.2.3 Article title" + text
-  * appendices  - numbering restarts per appendix: "1. Section" > "1.1 text"
 """
 
 import json
@@ -16,7 +12,7 @@ from pathlib import Path
 
 import pymupdf
 
-COLUMN_SPLIT = 235.0  # x0 threshold: everything to the right is English
+COLUMN_SPLIT = 235.0  # threshold: everything to the right is English
 HEADER_Y = 20.0       # running header / publication line above this
 FOOTER_Y = 598.0      # page number below this
 LAST_BODY_PAGE = 85   # pages 86-90 are the table of contents
