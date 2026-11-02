@@ -10766,7 +10766,7 @@
         {
           "page": 59,
           "figure_id": "drawing-1",
-          "verified": false
+          "verified": true
         }
       ],
       "flags": [],
@@ -12684,7 +12684,7 @@
         {
           "page": 67,
           "figure_id": "appendix-3-overalls",
-          "verified": false
+          "verified": true
         }
       ],
       "related_articles": [
@@ -12724,7 +12724,7 @@
         {
           "page": 68,
           "figure_id": "appendix-3-hypercar-stickers",
-          "verified": false
+          "verified": true
         }
       ],
       "related_articles": [
@@ -12762,7 +12762,7 @@
         {
           "page": 69,
           "figure_id": "appendix-3-lmgt3-stickers",
-          "verified": false
+          "verified": true
         }
       ],
       "related_articles": [
@@ -12964,7 +12964,7 @@
         {
           "page": 72,
           "figure_id": "appendix-5-rfid",
-          "verified": false
+          "verified": true
         }
       ],
       "related_articles": [
