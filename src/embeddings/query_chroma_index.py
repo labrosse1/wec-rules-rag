@@ -18,6 +18,7 @@ import argparse
 import os
 import sys
 from pathlib import Path
+from dotenv import load_dotenv
 
 import chromadb
 from llama_index.core import VectorStoreIndex
@@ -38,7 +39,8 @@ def load_collection(index_dir):
 
 
 def check_key():
-    if not os.environ.get("VOYAGE_API_KEY"):
+    load_dotenv()
+    if not os.getenv("VOYAGE_API_KEY"):
         sys.exit("VOYAGE_API_KEY is not set.\n"
                  "  macOS / Linux:       export VOYAGE_API_KEY=your_key\n"
                  "  Windows PowerShell:  $env:VOYAGE_API_KEY=\"your_key\"\n"
