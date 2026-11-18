@@ -284,6 +284,18 @@ wheels = [
 ]
 
 [[package]]
+name = "bm25s"
+version = "0.3.16"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/95/de/f888ccc0787164b4cf60b318b2225dbc21519beaf099cf2cf7424ca6f616/bm25s-0.3.16.tar.gz", hash = "sha256:96301f99558c2318a889abfe1bc27cf53dc225f3860cdf03b0aaa5e72f8f4a2e", size = 81944, upload-time = "2026-10-28T18:49:06.05Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/dc/5f/73f19cc86ecfd4533f0a82e55e689d5cbc4b5f845526a191316c17d38ee6/bm25s-0.3.16-py3-none-any.whl", hash = "sha256:65d973bd496de883ae525955379e3e7cf90a12c3d54ed175036315ae677512c9", size = 76043, upload-time = "2026-10-28T18:49:04.47Z" },
+]
+
+[[package]]
 name = "build"
 version = "1.6.1"
 source = { registry = "https://pypi.org/simple" }
@@ -869,6 +881,45 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/a7/b2/4140c69c6a66432916b26158687e821ba631a4c9273c474343badf84d3ba/future-1.0.0.tar.gz", hash = "sha256:bd2968309307861edae1458a4f8a4f3598c03be43b97521076aebf5d94c07b05", size = 1228490, upload-time = "2024-02-21T11:52:38.461Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/da/71/ae30dadffc90b9006d77af76b393cb9dfbfc9629f339fc1574a1c52e6806/future-1.0.0-py3-none-any.whl", hash = "sha256:929292d34f5872e70396626ef385ec22355a1fae8ad29e1a734c3e43f9fbc216", size = 491326, upload-time = "2024-02-21T11:52:35.956Z" },
+]
+
+[[package]]
+name = "google-auth"
+version = "2.62.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "cryptography" },
+    { name = "pyasn1-modules" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/4a/d4/87353e950d653d87360176363d51f316e8e368e1ddbb7ba7aa5503c30c3e/google_auth-2.62.2.tar.gz", hash = "sha256:046c61a72d3a847d6df6417a7f0d5cf054e3b82bbcb54fb1e69d47880964049c", size = 404543, upload-time = "2026-11-10T15:50:55.102Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a0/d4/0f8481baa50f75db3bb19a0df79fe19615e66eccfc3afb0b946dcb8791b3/google_auth-2.62.2-py3-none-any.whl", hash = "sha256:e9bcdb0679b6a4369ac327c5c59f06d92f7b4cd2624e7100294c14632f55a36b", size = 270150, upload-time = "2026-11-10T15:50:53.408Z" },
+]
+
+[package.optional-dependencies]
+requests = [
+    { name = "requests" },
+]
+
+[[package]]
+name = "google-genai"
+version = "2.34.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "distro" },
+    { name = "google-auth", extra = ["requests"] },
+    { name = "httpx" },
+    { name = "pydantic" },
+    { name = "requests" },
+    { name = "sniffio" },
+    { name = "tenacity" },
+    { name = "typing-extensions" },
+    { name = "websockets" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/22/89/4621aee9cb183efa5b8a187f0e315c49fddcfb8cd7f238b4a3bf4946dcd0/google_genai-2.34.0.tar.gz", hash = "sha256:8e182cf3f73384167b96861cf0aef5102b5070f2db1ea11002879e913806ef37", size = 791853, upload-time = "2026-10-29T06:43:23.706Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2e/42/c24db865d9231b1c672ea26242a4dcf340e200bb1a9823dce4aa9c4c07a4/google_genai-2.34.0-py3-none-any.whl", hash = "sha256:a4cb02aebc4c357f863d2938132f0e3f7967fc5e00b8a4078673f68aad340665", size = 1258155, upload-time = "2026-10-29T06:43:21.121Z" },
 ]
 
 [[package]]
@@ -1614,6 +1665,20 @@ wheels = [
 ]
 
 [[package]]
+name = "llama-index-llms-google-genai"
+version = "0.12.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "google-genai" },
+    { name = "llama-index-core" },
+    { name = "pillow" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/32/45/d8e5f79bd725767a1d3cb01fe02d72d6b993f176a74c27ff437c04135739/llama_index_llms_google_genai-0.12.0.tar.gz", hash = "sha256:fd2b7bc2fe1f65212477004ca4f1407e796ef544c8c963e4a3e1f311d3b31a1d", size = 15074, upload-time = "2026-11-14T02:12:40.585Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9f/a9/ad7168175c7799bd75b166bcf0fe1c1703350f465241bbc028cc155c1ee4/llama_index_llms_google_genai-0.12.0-py3-none-any.whl", hash = "sha256:9da09cdcd6fff30b242bd8e04e5120531d06e84166eab6f2d795f8c9c1a752e8", size = 15527, upload-time = "2026-11-14T02:12:39.639Z" },
+]
+
+[[package]]
 name = "llama-index-llms-openai"
 version = "0.7.10"
 source = { registry = "https://pypi.org/simple" }
@@ -1624,6 +1689,33 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/74/6e/1ef83a852296c55fe8c529b4476073eccaff150d57aceb3d6319a87dcc89/llama_index_llms_openai-0.7.10.tar.gz", hash = "sha256:aa8dabf08ea0b9740fc9dae9677f05049254be5e929794a886692eaf26973def", size = 27586, upload-time = "2026-07-21T23:16:18.087Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/8b/89/854cb7b2e5be3b3c16561e93f3edd52d8a1b6e031be1aca4519b9fdd3917/llama_index_llms_openai-0.7.10-py3-none-any.whl", hash = "sha256:b76a0c3d4aaa9aba57dc0366ca6b2346c6819bed22973e334676d7a34704e46a", size = 28673, upload-time = "2026-07-21T23:16:17.062Z" },
+]
+
+[[package]]
+name = "llama-index-postprocessor-voyageai-rerank"
+version = "0.7.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "llama-index-core" },
+    { name = "voyageai", marker = "python_full_version < '3.13'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/9e/12/2b87fafb976d7c8f9d643e12e9772b3a2fff3efabac9172f2449cfc95b2f/llama_index_postprocessor_voyageai_rerank-0.7.0.tar.gz", hash = "sha256:7daf8bd7a2b1c90e5f7782c3af275bc7789652189fa046dfe0fc2b299b945de4", size = 6634, upload-time = "2026-11-14T02:22:29.465Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9f/75/35809e12be971020e91643f72c42de3163e20ad1108ca9c38829a6f643b1/llama_index_postprocessor_voyageai_rerank-0.7.0-py3-none-any.whl", hash = "sha256:b994960bb27b05c72fde2243069aaf2a0093f4a6e30e6d4581c82875bcc0dcf7", size = 6274, upload-time = "2026-11-14T02:22:28.628Z" },
+]
+
+[[package]]
+name = "llama-index-retrievers-bm25"
+version = "0.9.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "bm25s" },
+    { name = "llama-index-core" },
+    { name = "pystemmer" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e2/d3/4503d3e0a627065af69b5da9ed4aa93443516c008c28741e6469186d7805/llama_index_retrievers_bm25-0.9.0.tar.gz", hash = "sha256:17c4751013ad29e1b98fc2d1c28174d0cdbb3b8bcef91bdaaa427444d83cb8ff", size = 5523, upload-time = "2026-11-14T02:31:52.824Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e9/42/be62212e08af652e8e6e039ddced4fe8ab19d4caeb5ac758c02deb5e94fc/llama_index_retrievers_bm25-0.9.0-py3-none-any.whl", hash = "sha256:59a84f0d8e7d24d7e5f9172674912404c51575587d2b682d0dff48ffec69c0e4", size = 5060, upload-time = "2026-11-14T02:31:52.03Z" },
 ]
 
 [[package]]
@@ -2620,6 +2712,27 @@ wheels = [
 ]
 
 [[package]]
+name = "pyasn1"
+version = "0.6.5"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/88/7e/3c0da41061a2021cac7cd524fd57092adbe5b515e8bf9005702e366802e2/pyasn1-0.6.5.tar.gz", hash = "sha256:6b11616a6bcf3a40e635f082bb232fa57b5e0dd7f517bd7ddd69ec3794508a47", size = 155152, upload-time = "2026-10-27T06:32:49.125Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/19/1f/3eefd5c84c35cae44549ce1c7f7e58f7945b34f5a6bce07a135438522073/pyasn1-0.6.5-py3-none-any.whl", hash = "sha256:4017b0fce125096b8573b39c989fdb1a4b19cf761e683398184550fea0e66587", size = 84807, upload-time = "2026-10-27T06:32:48.045Z" },
+]
+
+[[package]]
+name = "pyasn1-modules"
+version = "0.4.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyasn1" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e9/e6/78ebbb10a8c8e4b61a59249394a4a594c1a7af95593dc933a349c8d00964/pyasn1_modules-0.4.2.tar.gz", hash = "sha256:677091de870a80aae844b1ca6134f54652fa2c8c5a52aa396440ac3106e941e6", size = 307892, upload-time = "2025-03-28T02:41:22.17Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/47/8d/d529b5d697919ba8c11ad626e835d4039be708a35b0d22de83a269a6682c/pyasn1_modules-0.4.2-py3-none-any.whl", hash = "sha256:29253a9207ce32b64c3ac6600edc75368f98473906e8fd1043bd6b5b1de2c14a", size = 181259, upload-time = "2025-03-28T02:41:19.028Z" },
+]
+
+[[package]]
 name = "pybase64"
 version = "1.5.1"
 source = { registry = "https://pypi.org/simple" }
@@ -2985,6 +3098,30 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/6d/5d/f2ddeef4a855a102aaae5e97826a0260007522ab504421b75addfdb1517c/pyproject_hooks-1.3.3.tar.gz", hash = "sha256:defda19b854fa0d3bd4f76ea4ddcba8abd7dcfcdd585a6690ade050744fc5f43", size = 21013, upload-time = "2026-09-16T08:58:03.999Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/85/11/044d1ae1b4ec0d7af88ee5bc91e081be1022533032b906a7bdabdbb60977/pyproject_hooks-1.3.3-py3-none-any.whl", hash = "sha256:5fc53fdac9f7bd63fbcdc868fb5f90b4784d78a53a3d3388cd738b807441a20b", size = 10724, upload-time = "2026-09-16T08:58:02.96Z" },
+]
+
+[[package]]
+name = "pystemmer"
+version = "2.2.0.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/26/12/0378ba4391a4674067ae9db0e025ec998f6ca74caddd22fbdc59dc19aafb/pystemmer-2.2.0.3.tar.gz", hash = "sha256:9ac74c8d0f3358dbb050f64cddbb8d55021d831d92305d7c20780ea8d6c0020e", size = 303860, upload-time = "2024-10-10T00:36:25.921Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/81/7c/e09c0ac1aa4571ded5f46c14aed5d4828b61392611ed1c59a8faf1cae98a/PyStemmer-2.2.0.3-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:c30c44241065beb9432273874f199fc109473338d9f2c921a3387fd534fd94a7", size = 214916, upload-time = "2024-10-10T00:56:41.803Z" },
+    { url = "https://files.pythonhosted.org/packages/e5/dc/b30dd228af740b1ffe18e4cfb48c22aa8481ce1e79405cac31086fb849bd/PyStemmer-2.2.0.3-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:a6adf0b86b6be85f0cf80b2b255b2b0179782b4a3f39c0a6c5b3dd07af5f95eb", size = 220418, upload-time = "2024-10-10T00:56:43.354Z" },
+    { url = "https://files.pythonhosted.org/packages/f7/68/eb9f06b2f04f408ed748d6e71fb2f5ae92deba0eea07b6e374268d53cb49/PyStemmer-2.2.0.3-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:2d42b41082553fa23a4ce191860fd7caffdeaf8507e84db630a97ed154bd2320", size = 644074, upload-time = "2024-10-10T00:56:45.45Z" },
+    { url = "https://files.pythonhosted.org/packages/a6/9f/e95eeccf29ad1e1dbf4a14b76e2fa5b6698ba06f10634b097b32258839b0/PyStemmer-2.2.0.3-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ec763ee2994402c534bf898ff318edd158c32071c3ffbdcd7ae7b7c884250471", size = 683255, upload-time = "2024-10-10T00:56:47.314Z" },
+    { url = "https://files.pythonhosted.org/packages/3b/4b/8b077958eb760ac647d2362f8bd1ae99097fa351edc6333fde0dee51f912/PyStemmer-2.2.0.3-cp312-cp312-musllinux_1_2_i686.whl", hash = "sha256:264f09d5f70b09c845a6f0d0d4973de674056fd50452cb9383ffae8fc0967f1d", size = 649228, upload-time = "2024-10-10T00:56:50.101Z" },
+    { url = "https://files.pythonhosted.org/packages/7f/13/3d57038439293d93e40af89b48bc06c714f8cd8c5d22a9e6d0870f49ea1c/PyStemmer-2.2.0.3-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:5634f38a781b9a893550c23380af080ca5291d19c2bcb1753a34022d1d0de7cb", size = 682987, upload-time = "2024-10-10T00:56:53.094Z" },
+    { url = "https://files.pythonhosted.org/packages/9a/95/f04305ab6fc6312b4727b725ab983342237c7bb95d21d98bd768146dd9e8/PyStemmer-2.2.0.3-cp312-cp312-win32.whl", hash = "sha256:186c2e90ea2c3d0fab21f10f17b48fb7d716cba5f49b68f7f0fe539db4ff0499", size = 141412, upload-time = "2024-10-10T00:56:54.64Z" },
+    { url = "https://files.pythonhosted.org/packages/0f/73/861a71009f20331cd22aff1c37b9c39ef3af4d57d6816df79d51b3fca533/PyStemmer-2.2.0.3-cp312-cp312-win_amd64.whl", hash = "sha256:320c1da333f5f8571e2b313c9fa6c0a7a79d8a00a2ad0bf29932d931d236d7e8", size = 185395, upload-time = "2024-10-10T00:56:56.177Z" },
+    { url = "https://files.pythonhosted.org/packages/c0/eb/b39bef7c8ec2ad9e198b956104741c1e7a94f0003875ef0a5a32ae20443f/PyStemmer-2.2.0.3-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:806530b6a1542efd6453fc5f5b5aa348d52c337d0eb1dfc54a5ff6a8733d7ccc", size = 214375, upload-time = "2024-10-10T00:56:57.681Z" },
+    { url = "https://files.pythonhosted.org/packages/ad/db/93f0fd99c99cfdfb68a6d671324ceb3e9c0cf2040f47d917a42e615faf03/PyStemmer-2.2.0.3-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:d3fe53911811ec554b13a2c3b0ceb1a23c6fbed3d510ea0d8544a4e0b861e4d6", size = 219992, upload-time = "2024-10-10T00:56:59.897Z" },
+    { url = "https://files.pythonhosted.org/packages/5c/52/cb3ad58e8ce701c97a38f7828d899cfd12f0b7b06c49a4d67a17298641eb/PyStemmer-2.2.0.3-cp313-cp313-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:cf26cc1071685597b54b78dd2f62080c58f9be1cb9b4f9c92f94d5c0b5e5e65d", size = 638201, upload-time = "2024-10-10T00:57:02.474Z" },
+    { url = "https://files.pythonhosted.org/packages/c6/e7/d22c50ac8e76c2878cc1056010d0db26b7e5a7936262320c62a6dcdfdbc9/PyStemmer-2.2.0.3-cp313-cp313-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f3d229a8451e5e909c3f41e19c2f1c9a531d3281954a8cbc06163a458adcc465", size = 678416, upload-time = "2024-10-10T00:57:04.845Z" },
+    { url = "https://files.pythonhosted.org/packages/90/bd/cd603a89316769c4ae3a4d2271c9c9707b26939517bbe2f780c4f171ade3/PyStemmer-2.2.0.3-cp313-cp313-musllinux_1_2_i686.whl", hash = "sha256:f44e27fbdeffd46b513ed80d5dab0c7e0e09fb1cd85e8dbf8041b6e4a2d55bee", size = 643274, upload-time = "2024-10-10T00:57:06.675Z" },
+    { url = "https://files.pythonhosted.org/packages/0a/0e/7fad0a408def5738ce1deffc6242bd8086f76fae1f7a5a4c36e31ab528d0/PyStemmer-2.2.0.3-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:4acd71d4359399e41543198caf150e7f398a8d52e371a0c89ba63a90ec3e0909", size = 677487, upload-time = "2024-10-10T00:57:08.474Z" },
+    { url = "https://files.pythonhosted.org/packages/11/79/3f429bd0c97fe95d62aee32216dfbe3db9a59c3a8a3ff185bb1927e45658/PyStemmer-2.2.0.3-cp313-cp313-win32.whl", hash = "sha256:91ab47d071383b5c558542bf54facf116f3fd1516c177ef10843f41e528d8873", size = 141345, upload-time = "2024-10-10T00:57:10.635Z" },
+    { url = "https://files.pythonhosted.org/packages/71/65/87b637539c73bf5b1074eba87389616949e073d91f6c670a4d91e16504de/PyStemmer-2.2.0.3-cp313-cp313-win_amd64.whl", hash = "sha256:4e192613a1e02b0cebcbb9f8a708001bdf7ec842972b42008f3b0b006a8c53b6", size = 185251, upload-time = "2024-10-10T00:57:12.081Z" },
 ]
 
 [[package]]
@@ -3974,6 +4111,9 @@ dependencies = [
     { name = "llama-index" },
     { name = "llama-index-core" },
     { name = "llama-index-embeddings-voyageai" },
+    { name = "llama-index-llms-google-genai" },
+    { name = "llama-index-postprocessor-voyageai-rerank" },
+    { name = "llama-index-retrievers-bm25" },
     { name = "llama-index-vector-stores-chroma" },
     { name = "pdfplumber" },
     { name = "pymupdf4llm" },
@@ -3986,6 +4126,9 @@ requires-dist = [
     { name = "llama-index", specifier = ">=0.14.25" },
     { name = "llama-index-core", specifier = ">=0.14.25" },
     { name = "llama-index-embeddings-voyageai", specifier = ">=0.7.0" },
+    { name = "llama-index-llms-google-genai", specifier = ">=0.12.0" },
+    { name = "llama-index-postprocessor-voyageai-rerank", specifier = ">=0.7.0" },
+    { name = "llama-index-retrievers-bm25", specifier = ">=0.9.0" },
     { name = "llama-index-vector-stores-chroma", specifier = ">=0.6.0" },
     { name = "pdfplumber", specifier = ">=0.11.10" },
     { name = "pymupdf4llm", specifier = ">=1.28.2" },
