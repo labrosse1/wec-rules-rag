@@ -35,6 +35,7 @@ RERANK_MODEL = "rerank-3-lite"
 CANDIDATES = 20                       # fused candidates passed to the reranker (ADR-004, evaluation result)
 TOP_N = 5                             # articles handed to the answer LLM (ADR-004)
 THRESHOLD = 0.60                      # min. best reranker score, calibrated on set 2 (ADR-004)
+HISTORY_EXCHANGES = 3                 # exchanges (user + assistant) seen by the rewriting, as for the answer
 LE_MANS_ARTICLE = "1.2.4"
 RE_LE_MANS = re.compile(r"le\s*mans|24\s*hours|\b24\s*h\b", re.I)
 
@@ -122,7 +123,8 @@ class WecRetriever:
     def rewrite(self, message: str, history: History) -> str:
         if not history:
             return message  # first message: searched as it is
-        convo = "\n".join(f"{role.capitalize()}: {text}" for role, text in history)
+        recent = list(history)[-2 * HISTORY_EXCHANGES:]  # last 3 exchanges = last 6 messages
+        convo = "\n".join(f"{role.capitalize()}: {text}" for role, text in recent)
         out = self.llm.complete(REWRITE_PROMPT.format(history=convo, message=message)).text.strip()
         return out.strip('"').strip() or message
 
